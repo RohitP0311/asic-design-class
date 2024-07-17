@@ -20,4 +20,14 @@ Step4: Final output of the programme
 
 ![Final Outpad](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Final%20Output.png)
    
-        
+# Task 2
+
+Now we check the same programme in RISC5 Simulator.
+
+Step1: run the same programme in RISC5 Simulator
+
+![RISCV Simulator](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/RISCV%20Simulator.png)
+
+Step2: in the new window, we will write assembly code for the C programme.
+
+
