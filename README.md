@@ -24,10 +24,17 @@ Step4: Final output of the programme
 
 Now we check the same programme in RISC5 Simulator.
 
-Step1: run the same programme in RISC5 Simulator
+Step1: Run the same programme in RISC5 Simulator
 
 ![RISCV Simulator](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/RISCV%20Simulator.png)
 
-Step2: in the new window, we will write assembly code for the C programme.
+Step2: The commands will get displayed in the 'main'
 
+![Main_O1](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_O1.png)
+
+![Disassembly of section](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Disassembly%20of%20section.png)
+
+Step3: Now run the program with Ofast compiler
+
+![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
 
