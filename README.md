@@ -38,3 +38,16 @@ Step3: Now run the program with Ofast compiler
 
 ![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
 
+# Task 3
+
+Step1: Now, we will verify the output using gcc and RiscV compilers, sum should be 15 in both the cases.
+
+![RiscV_out](https://github.com/RohitP0311/asic-design-class/blob/main/Task3/RiscV_Out.png)
+
+Step2: Now we will debug the commands using 'Spike -d pk sum1ton.o' command & also verify that content of the register gets modified after any operation(eg. addi, lui, li).
+
+![Debug](https://github.com/RohitP0311/asic-design-class/blob/main/Task3/Debug.png)
+
+Here, we can see that contents of register a0 has been changed after performing operation.
+
+
