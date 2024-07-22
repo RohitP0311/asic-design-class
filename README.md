@@ -7,7 +7,7 @@ Step1: First ensure that we are in the home directory
 ![Home Directory](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Home%20Directory.png)
 
 Step2: Write a C program in the leafpad editor using 
-\'''leafpad sum1ton.c &\'''
+         leafpad sum1ton.c &
 
 ![Leafpad Editor](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Leafpad%20Editor.png)
 
