@@ -45,12 +45,15 @@ Step2: The commands will get displayed in the 'main'
 
 ![Disassembly of section](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Disassembly%20of%20section.png)
 
-Step3: Now run the program with Ofast compiler
+Step3: Now run the program with Ofast compiler using the following command- 
+
+        riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum 1ton.c
+
 
 ![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
 
 
-# Task 3: Simulation using Spike & Observation using O1 and Ofast compilers.
+# Task 3: Simulation using Spike, Debugging & Observations using O1 and Ofast compilers.
 
 Step1: Now, we will verify the output using gcc and RiscV compilers, sum should be 15 in both the cases.
 
