@@ -18,6 +18,10 @@ Step2: Write a C program in the leafpad editor using 'leafpad sum1ton.c &'
 
 Step3: Compile the program in gcc compiler using command 'gcc sum1ton.c'
 
+       gcc sum1ton.c
+
+       
+
 ![GCC Compiler](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Gcc%20Compiler.png)
 
 Step4: Final output of the programme
