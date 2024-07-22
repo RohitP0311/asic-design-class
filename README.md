@@ -7,13 +7,17 @@ Step1: First ensure that we are in the home directory
 ![Home Directory](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Home%20Directory.png)
 
 Step2: Write a C program in the leafpad editor using 
-         <leafpad sum1ton.c>
+         'leafpad sum1ton.c &'
+         step1 : create a C file in the home directory
+
+       leafpad sum1ton.c
+
          
 ![Leafpad Editor](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Leafpad%20Editor.png)
 
 ![C Program](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/C%20Program.png)
 
-Step3: Compile the program in gcc compiler using command <gcc sum1ton.c>
+Step3: Compile the program in gcc compiler using command 'gcc sum1ton.c'
 
 ![GCC Compiler](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Gcc%20Compiler.png)
 
@@ -38,6 +42,7 @@ Step2: The commands will get displayed in the 'main'
 Step3: Now run the program with Ofast compiler
 
 ![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
+
 
 # Task 3
 
