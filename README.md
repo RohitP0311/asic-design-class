@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 : Write a C program for the sum of 1 to 5 Natural numbers using GCC compiler.
 
 Write & run a 'c' code in gcc compiler and perform the sum of 1 to 5 numbers.
 
