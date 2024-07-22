@@ -34,6 +34,9 @@ Now we check the same programme in RISC5 Simulator.
 
 Step1: Run the same programme in RISC5 Simulator
 
+       riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum 1ton.c
+
+
 ![RISCV Simulator](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/RISCV%20Simulator.png)
 
 Step2: The commands will get displayed in the 'main'
@@ -47,7 +50,7 @@ Step3: Now run the program with Ofast compiler
 ![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
 
 
-# Task 3
+# Task 3: Simulation using Spike & Observation using O1 and Ofast compilers.
 
 Step1: Now, we will verify the output using gcc and RiscV compilers, sum should be 15 in both the cases.
 
