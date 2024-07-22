@@ -47,7 +47,7 @@ Step2: The commands will get displayed in the 'main'
 
 Step3: Now run the program with Ofast compiler using the following command- 
 
-        riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum 1ton.c
+        riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 
 
 ![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
@@ -55,11 +55,32 @@ Step3: Now run the program with Ofast compiler using the following command-
 
 # Task 3: Simulation using Spike, Debugging & Observations using O1 and Ofast compilers.
 
-Step1: Now, we will verify the output using gcc and RiscV compilers, sum should be 15 in both the cases.
+Step1: First we will observe the commands using O1 compiler. Use the following command for O1 compiler - 
+
+       riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum 1ton.c
+
+In the main section we can find out the list of operations for the program. 
+![Main_O1](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_O1.png)
+
+Step2: Now, we need to observe the main operations using another compiler Ofast. Use the following command to use Ofast compiler- 
+
+              riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+
+In the main section we can find out the list of operations for the program.
+![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
+
+Step3: Now, we will verify the output using gcc and RiscV compilers, sum should be 15 in both the cases. For Spike simulation use following command-
+
+         spike pk sum1ton.o
+
 
 ![RiscV_out](https://github.com/RohitP0311/asic-design-class/blob/main/Task3/RiscV_Out.png)
 
 Step2: Now we will debug the commands using 'Spike -d pk sum1ton.o' command & also verify that content of the register gets modified after any operation(eg. addi, lui, li).
+
+To debug use following command - 
+
+         spike -d pk sum1ton.o
 
 ![Debug](https://github.com/RohitP0311/asic-design-class/blob/main/Task3/Debug.png)
 
