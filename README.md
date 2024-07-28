@@ -92,7 +92,7 @@ Here, we can see that contents of register a0 has been changed after performing 
 
 # Task 4: To Identify RISC-V Instruction type and find 32 bit pattern
 
-* In the RISCV, There are four core instruction formats: R, I, S, B,J & U. Instructions must be aligned on a four-byte boundary memory. 
+* In the RISCV, There are four core instruction formats: R, I, S, B, J & U. Instructions must be aligned on a four-byte boundary memory. 
 
 **What are the instruction sets in RISCV?**
 
@@ -108,18 +108,19 @@ There are total 6 types of instructions in RISC-V:
   
      ![RType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/RType.png)
   
-     1.OpCode
-                                                                                                                                                                                               
-     2.Funct3
-  
-     3.Funct7
-  
-     4.rd
-  
-     5.rs1
-  
-     6.rs2
+     + OpCode(7 bits): Basic Operation Code
+     + Funct3(3 bits): Function Code
+     + Funct7(7 bits): Function code for additional instruction differentiation
+     + rd(5 bits): Destination register
+     + rs1(5 bits): First source register
+     + rs2(5 bits): Second source register
 
-* 
+* I type       
+     + I-type instructions in the RISC-V architecture are used for operations that involve an immediate value along with one or two registers.
+    +  These instructions typically perform operations such as arithmetic with immediate values, load operations, and certain branch instructions.
+    +  The format of I-type instructions includes fields for a source register, destination register, an immediate value, a function code, and an opcode.
+    +  The instruction format is as follows:
 
+ ![IType]()
+  
 
