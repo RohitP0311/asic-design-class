@@ -94,8 +94,12 @@ Here, we can see that contents of register a0 has been changed after performing 
 
 * In the RISCV, There are four core instruction formats: R, I, S, B,J & U. Instructions must be aligned on a four-byte boundary memory. 
 
-** What are the instruction sets in RISCV?
+** What are the instruction sets in RISCV?**
 
-The instruction set is designed for the wide range of uses. The base instruction set has a fixed length of 32-bit naturally aligned instructions. The RISC-V instruction set is the core of the architechture, defining the set of operations that a RISC-V processor can perform. The instruction set is designed to be simple and efficient with a few basic instructions that can be combined to perform complex operations.
+* The instruction set is designed for the wide range of uses. The base instruction set has a fixed length of 32-bit naturally aligned instructions. The RISC-V instruction set is the core of the 
+  architechture, defining the set of operations that a RISC-V processor can perform. The instruction set is designed to be simple and efficient with a few basic instructions that can be combined to 
+  perform complex operations.
+
+
 
 
