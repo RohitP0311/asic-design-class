@@ -1,6 +1,5 @@
 <details>
-   <summary>Lab1
-## 
+   <summary>Lab1: Write a C program for the sum of 1 to 5 Natural numbers using GCC compiler. </summary>
 
 # Task 1 : Write a C program for the sum of 1 to 5 Natural numbers using GCC compiler.
 
@@ -35,7 +34,7 @@ Step4: Final output of the programme
 </details>   
 
 <details>
-     <Summary>Lab2
+     <Summary>Lab2: Compile the same program using RISCV Compiler and check the output. </summary>
 
    
 # Task 2: Compile the same program using RISCV Compiler and check the output.
@@ -65,7 +64,7 @@ Step3: Now run the program with Ofast compiler using the following command-
 </details>
 
 <details>
-   <Summary>Lab3
+   <Summary>Lab3:Simulation using Spike, Debugging & Observations using O1 and Ofast compilers.  </Summary>
       
 # Task 3: Simulation using Spike, Debugging & Observations using O1 and Ofast compilers.
 
