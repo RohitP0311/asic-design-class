@@ -121,6 +121,69 @@ There are total 6 types of instructions in RISC-V:
     +  The format of I-type instructions includes fields for a source register, destination register, an immediate value, a function code, and an opcode.
     +  The instruction format is as follows:
 
- ![IType]()
+ ![IType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/IType.png)
+
+ + immediate (12 bits): Immediate value used for operations.
+    + rs1 (5 bits): Source register.
+    + funct3 (3 bits): Function code for instruction differentiation.
+    + rd (5 bits): Destination register.
+    + opcode (7 bits): Basic operation code for I-type instructions.
+
+* S Type 
+  
+    + S-type instructions in the RISC-V architecture are used for store operations, where data is stored from a register into memory.
+   + The format of S-type instructions includes fields for two source registers, an immediate value that determines the memory offset, a function code, and an opcode.
+   +  The format is as follows: 
+
+  ![SType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/SType.png)
+    + imm[11:5] (7 bits): Upper 7 bits of the immediate value.
+    + rs2 (5 bits): Second source register (contains the data to be stored).
+    + rs1 (5 bits): First source register (base address register).
+    + funct3 (3 bits): Function code for instruction differentiation.
+    + imm[4:0] (5 bits): Lower 5 bits of the immediate value.
+    + opcode (7 bits): Basic operation code for S-type instructions.
+ 
+* B Type
+
+    + B-type instructions in the RISC-V architecture are used for conditional branch operations.
+    +  These instructions are designed to alter the flow of execution based on comparisons between two registers. 
+    +  The format of B-type instructions includes fields for two source registers, an immediate value that determines the branch offset, a function code, and an opcode.
+    +  Following is the instruction format:
+    
+     ![BType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/BType.png)
+    + imm[12] (1 bit): The 12th bit of the immediate value.
+    + imm[10:5] (6 bits): The 10th to 5th bits of the immediate value.
+    + rs2 (5 bits): Second source register.
+    + rs1 (5 bits): First source register.
+    + funct3 (3 bits): Function code for instruction differentiation.
+    + imm[4:1] (4 bits): The 4th to 1st bits of the immediate value.
+    + imm[11] (1 bit): The 11th bit of the immediate value.
+    + opcode (7 bits): Basic operation code for B-type instructions
+
+* U Type
+
+    + U-type instructions in the RISC-V architecture are used for operations involving large immediate values, typically for loading upper immediate values or computing addresses.
+    +  The format of U-type instructions includes fields for a destination register, a large immediate value, and an opcode.
+    +  The instruction format is as follows:
+  
+     ![UType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/UType.png)
+
+    + immediate[31:12] (20 bits): The upper 20 bits of the immediate value.
+    + rd (5 bits): Destination register.
+    + opcode (7 bits): Operation code for U-type instructions.
+    + The immediate value is stored in the upper 20 bits of a 32-bit word, with the lower 12 bits set to zero when used in calculations.
+
+* J type
+    + J-type instructions in the RISC-V architecture are used for jump operations, allowing for altering the program control flow by jumping to a specified address.
+    + These instructions are typically used for unconditional jumps, like calling functions or implementing loops.
+    + Following is the instruction format: 
+     
+    ![JType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/JType.png)
+    + imm[20] (1 bit): The 20th bit of the immediate value.
+    + imm[10:1] (10 bits): The 10th to 1st bits of the immediate value.
+    + imm[11] (1 bit): The 11th bit of the immediate value.
+    + imm[19:12] (8 bits): The 19th to 12th bits of the immediate value.
+    + rd (5 bits): Destination register where the return address is stored.
+    + opcode (7 bits): Operation code for J-type instructions.
   
 
