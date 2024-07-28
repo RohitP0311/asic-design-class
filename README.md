@@ -31,7 +31,10 @@ Step4: Final output of the programme
 
 ![Final Outpad](https://github.com/RohitP0311/asic-design-class/blob/main/Task1/Final%20Output.png)
 
-<details/>   
+</details>   
+
+<details>
+   
 # Task 2: Compile the same program using RISCV Compiler and check the output.
 
 Now we check the same programme in RISC5 Simulator.
@@ -56,7 +59,9 @@ Step3: Now run the program with Ofast compiler using the following command-
 
 ![main_fast](https://github.com/RohitP0311/asic-design-class/blob/main/Task2/Main_Fast.png)
 
-<details/>
+</details>
+
+<details>
 # Task 3: Simulation using Spike, Debugging & Observations using O1 and Ofast compilers.
 
 Step1: First we will observe the commands using O1 compiler. Use the following command for O1 compiler - 
@@ -92,7 +97,7 @@ To debug use following command -
 
 Here, we can see that contents of register a0 has been changed after performing operation.
 
-<details/>
+</details>
    
 # Task 4: To Identify RISC-V Instruction type and find 32 bit pattern
 
