@@ -210,9 +210,10 @@ There are total 6 types of instructions in RISC-V:
    + func3 = 000
    + func7 = 0000000
    + R Type
-   + 32 Bit Instruction: 0000000_01011_01100_000_01011_0110011
+   + 32 Bit Instruction: 0000000 01011 01100 000 01011 0110011
 
     2. ```SUB r13, r11, r12```
+
 
     + Opcode for SUB = 0110011
     + rd = r13 = 01101
@@ -221,6 +222,31 @@ There are total 6 types of instructions in RISC-V:
     + func3 = 000
     + func7 = 0100000
     + R Type
-    + 32 Bit Instruction: 0100000_00001_00000_000_00010_0110011
+    + 32 Bit Instruction: 0100000 01100 01011 000 01101 0110011
 
+    3. ```AND r12, r11, r13```
+
+    + Opcode for AND = 0110011
+    + rd = r12 = 01100
+    + rs1 = r11 = 01011
+    + rs2 = r13 = 01101
+    + func3 = 111
+    + func7 = 0000000
+    + R Type
+    + 32 Bit Instruction: 0000000 01101 01011 111 01100 0110011
+
+    4. ```OR r8, r12, r5```
+
+    + Opcode for OR = 0110011
+    + rd = r8 = 01000
+    + rs1 = r12 = 01100
+    + rs2 = r5 = 00101
+    + func3 = 110
+    + func7 = 0000000
+    + R Type
+    + 32 Bit Instruction: 0000000 00101 01100 110 01000 0110011
+
+    5. ```XOR r8, r11, r4```
+
+    
     
