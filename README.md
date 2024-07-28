@@ -105,12 +105,19 @@ There are total 6 types of instructions in RISC-V:
 * R Type
      r-type format is use to carry out various operations using logical and arithmatic instructions.
      There are six sub fields in R types -
-     ![Debug](https://github.com/RohitP0311/asic-design-class/blob/main/Task3/Debug.png)
+  
+     ![RType](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/RType.png)
+  
      1.OpCode
+                                                                                                                                                                                               
      2.Funct3
+  
      3.Funct7
+  
      4.rd
+  
      5.rs1
+  
      6.rs2
 
 * 
