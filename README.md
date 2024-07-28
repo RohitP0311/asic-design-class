@@ -212,7 +212,8 @@ There are total 6 types of instructions in RISC-V:
    + R Type
    + 32 Bit Instruction: 0000000 01011 01100 000 01011 0110011
 
-    2. ```SUB r13, r11, r12```
+
+2. ```SUB r13, r11, r12```
 
 
     + Opcode for SUB = 0110011
@@ -224,7 +225,7 @@ There are total 6 types of instructions in RISC-V:
     + R Type
     + 32 Bit Instruction: 0100000 01100 01011 000 01101 0110011
 
-    3. ```AND r12, r11, r13```
+3. ```AND r12, r11, r13```
 
     + Opcode for AND = 0110011
     + rd = r12 = 01100
@@ -235,7 +236,7 @@ There are total 6 types of instructions in RISC-V:
     + R Type
     + 32 Bit Instruction: 0000000 01101 01011 111 01100 0110011
 
-    4. ```OR r8, r12, r5```
+4. ```OR r8, r12, r5```
 
     + Opcode for OR = 0110011
     + rd = r8 = 01000
@@ -246,7 +247,97 @@ There are total 6 types of instructions in RISC-V:
     + R Type
     + 32 Bit Instruction: 0000000 00101 01100 110 01000 0110011
 
-    5. ```XOR r8, r11, r4```
+5. ```XOR r8, r11, r4```
 
-    
-    
+    + Opcode for XOR = 0110011
+    + rd = r8 = 01000
+    + rs1 = r11 = 01011
+    + rs2 = r4 = 00100
+    + func3 = 100
+    + func7 = 0000000
+    + R Type
+    + 32 Bit Instruction: 0000000 00100 01011 100 01000 0110011
+
+6. ```SLT r30, r20, r4```
+   
+    + Opcode for SLT = 0110011
+    + rd = r0 = 11110
+    + rs1 = r1 = 10100
+    + rs2 = r4 = 00100
+    + func3 = 010
+    + func7 = 0000000
+    + R Type
+    + 32 Bit Instruction: 0000000 00100 10100 010 1110 0110011      
+
+7. ```ADDI r31, r21, 5```
+
+    + Opcode for ADDI = 0010011
+    + rd = r2 = 11111
+    + rs1 = r2 = 10101
+    + imm = 000000000101
+    + func3 = 000
+    + I Type
+    + 32 Bit Instruction: 000000000101 10101 000 11111 0010011
+
+8. ```SW r21, r19, 4```
+
+    + Opcode for SW = 0100011
+    + rs1 = r19 = 10011
+    + rs2 = r21 = 10101
+    + imm = 0000000 0100
+    + func3 = 010
+    + S Type
+    + 32 Bit Instruction: 0000000 10101 10011 010 0100 0100011
+
+9. ```SRL r26, r21, r20```
+
+    + Opcode for SRL = 0110011
+    + rd = r26 = 11010
+    + rs1 = r21 = 10101
+    + rs2 = r20 = 10100
+    + func3 = 101
+    + func7 = 0000000
+    + R Type
+    + 32 Bit Instruction: 0000000 10100 10101 101 11010 0110011
+
+
+11. ```BNE r0, r19, 20```
+
+    + Opcode for BNE = 1100011
+    + rs1 = r0 = 00000
+    + rs2 = r19 = 10011
+    + imm = 000000 001010
+    + func3 = 001
+    + **B Type**
+    + 32 Bit Instruction: 0000000_00000_00000_001_01010_1100011
+
+12. ```BEQ r0, r0, 15```
+
+    + Opcode for BEQ = 1100011
+    + rs1 = r0 = 00000
+    + rs2 = r0 = 00000
+    + imm = 000000 001111
+    + func3 = 000
+    + **B Type**
+    + 32 Bit Instruction: 0000000_00000_00000_000_01111_1100011
+
+13. ```LW r3, r1, 2```
+
+    + Opcode for LW = 0000011
+    + rd = r3 = 00011
+    + rs1 = r1 = 00001
+    + imm = 000000000010
+    + func3 = 010
+    + **I Type**
+    + 32 Bit Instruction: 000000000010_00001_010_00011_0000011
+
+14. ```SLL r5, r1, r1```
+
+    + Opcode for SLL = 0110011
+    + rd = r5 = 00101
+    + rs1 = r1 = 00001
+    + rs2 = r1 = 00001
+    + func3 = 001
+    + func7 = 0000000
+    + **R Type**
+    + 32 Bit Instruction: 0000000_00001_00001_001_00101_0110011
