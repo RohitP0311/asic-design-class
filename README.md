@@ -187,3 +187,6 @@ There are total 6 types of instructions in RISC-V:
     + opcode (7 bits): Operation code for J-type instructions.
   
 
+## Identifying RISC-V Instruction Type-
+    1. ```ADD r11, r12, r13```
+      + OpCode for ADD = 
