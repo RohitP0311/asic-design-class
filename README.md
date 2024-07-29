@@ -414,40 +414,40 @@ The Output:
  ```
   ADD R6, R2, R1
   ```
-  ![Output1_Sum](https://github.com/user-attachments/assets/30cb6411-4c2a-4a2b-9f43-430c505ac4e7)
+  ![Output1_Sum](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output1_Sum.png)
 
 
   ```
   SUB R7, R1, R2
   ```
-  ![IMG_0013](https://github.com/user-attachments/assets/aa230620-2c97-4abb-b0a3-96fd3995f3a8)
+  ![Output2_SUB](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output2_SUB.png)
 
   
   ```
   AND R8, R1, R3
   ```
-  ![IMG_0027](https://github.com/user-attachments/assets/cad8c2be-643e-431e-8579-460a29b6a59c)
+  ![Output3_AND](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output3_AND.png)
 
 
   ```
   OR R9, R2, R5
   ```
-  ![IMG_0016](https://github.com/user-attachments/assets/88b1edde-9b3d-4271-af0c-dac55c3300dc)
+  ![Output4_OR](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output4_OR.png)
 
 
   ```
   XOR R10, R1, R4
   ```
-  ![IMG_0011](https://github.com/user-attachments/assets/95486b24-2a92-4d3b-8f18-4c549ee5bf4f)
+  ![Output5_XOR](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output5_XOR.png)
 
 
   ```
   SLT R1, R2, R4
   ```
-  ![IMG_0011](https://github.com/user-attachments/assets/13e32a3b-a2e3-4105-9df3-1cf0fe0c60a4)
+  ![Output6_SLT](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output6_SLT.png)
 
 
   ```
   ADDI R12, R4, 5
   ```
-  ![IMG_0009](https://github.com/user-attachments/assets/8de296ea-9d55-4dba-9c89-738b470e5d97)
+  ![Output7_ADDI](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output7_ADDI.png)
