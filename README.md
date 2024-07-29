@@ -201,7 +201,7 @@ There are total 6 types of instructions in RISC-V:
   
 
 ## Identifying RISC-V Instruction Type-
-    1. ```ADD r11, r12, r13```
+1. ```ADD r11, r12, r13```
     
    + OpCode for ADD = 0110011
    +  rd = r11 = 01011
