@@ -374,4 +374,15 @@ There are total 6 types of instructions in RISC-V:
 | LW r23, r21, 2       | 0x002A5F83                 |
 | SLL r25, r21, r20    | 0x014A9B33                 |
 
+## Task 2
+* In Terminal install iverilog and GTKWave.
+* To simulate and run the verilog code, use following command in the terminal
 
+        $ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+        $ ./iiitb_rv32i
+
+  * To run the GTKWave and see the output waveform, see the following command:
+
+         $ gtkwave iiitb_rv32i.vcd
+
+    
