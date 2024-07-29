@@ -385,4 +385,4 @@ There are total 6 types of instructions in RISC-V:
 
          $ gtkwave iiitb_rv32i.vcd
 
-    
+ ![GTKWave](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/JType.png)  
