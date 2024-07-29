@@ -374,6 +374,8 @@ There are total 6 types of instructions in RISC-V:
 | LW r23, r21, 2       | 0x002A5F83                 |
 | SLL r25, r21, r20    | 0x014A9B33                 |
 
+
+
 ## Task 2
 * In Terminal install iverilog and GTKWave.
 * To simulate and run the verilog code, use following command in the terminal
@@ -388,6 +390,64 @@ There are total 6 types of instructions in RISC-V:
  ![GTKWave_Run](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/GTKWave_Run.png)  
 
  
-The GTKWave output(In decimal format): 
 
- ![GTKWave_Out]()  
+ * Hard-coded instructions: These are custom instructions where the bit patterns are manually set by the designer rather than adhering to the standard RISC-V specification. And they are designed for a specific purpose or application. Hence      the 32-bits instruction that we generated will not match with the hardcoded ISA.
+  
+  
+  |  **Instructions**  |  **Standard RISCV ISA**  |  **Hardcoded ISA**  |  
+  |  :----:  |  :----:  |  :----:  |  
+  |  ADD R6, R2, R1  |  32'h00110333  |  32'h02208300  |  
+  |  SUB R7, R1, R2  |  32'h402083b3  |  32'h02209380  |  
+  |  AND R8, R1, R3  |  32'h0030f433  |  32'h0230a400  |  
+  |  OR R9, R2, R5  |  32'h005164b3  |  32'h02513480  |  
+  |  XOR R10, R1, R4  |  32'h0040c533  |  32'h0240c500  |  
+  |  SLT R1, R2, R4  |  32'h0045a0b3  |  32'h02415580  |  
+  |  ADDI R12, R4, 5  |  32'h004120b3  |  32'h00520600  |  
+  |  BEQ R0, R0, 15  |  32'h00000f63  |  32'h00f00002  |  
+  |  SW R3, R1, 2  |  32'h0030a123  |  32'h00209181  |  
+  |  LW R13, R1, 2  |  32'h0020a683  |  32'h00208681  |  
+  |  SRL R16, R14, R2  |  32'h0030a123  |  32'h00271803  |
+  |  SLL R15, R1, R2  |  32'h002097b3  |  32'h00208783  |  
+
+The Output:
+
+ ```
+  ADD R6, R2, R1
+  ```
+  ![Output1_Sum](https://github.com/user-attachments/assets/30cb6411-4c2a-4a2b-9f43-430c505ac4e7)
+
+
+  ```
+  SUB R7, R1, R2
+  ```
+  ![IMG_0013](https://github.com/user-attachments/assets/aa230620-2c97-4abb-b0a3-96fd3995f3a8)
+
+  
+  ```
+  AND R8, R1, R3
+  ```
+  ![IMG_0027](https://github.com/user-attachments/assets/cad8c2be-643e-431e-8579-460a29b6a59c)
+
+
+  ```
+  OR R9, R2, R5
+  ```
+  ![IMG_0016](https://github.com/user-attachments/assets/88b1edde-9b3d-4271-af0c-dac55c3300dc)
+
+
+  ```
+  XOR R10, R1, R4
+  ```
+  ![IMG_0011](https://github.com/user-attachments/assets/95486b24-2a92-4d3b-8f18-4c549ee5bf4f)
+
+
+  ```
+  SLT R1, R2, R4
+  ```
+  ![IMG_0011](https://github.com/user-attachments/assets/13e32a3b-a2e3-4105-9df3-1cf0fe0c60a4)
+
+
+  ```
+  ADDI R12, R4, 5
+  ```
+  ![IMG_0009](https://github.com/user-attachments/assets/8de296ea-9d55-4dba-9c89-738b470e5d97)
