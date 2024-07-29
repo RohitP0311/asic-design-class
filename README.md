@@ -102,6 +102,11 @@ To debug use following command -
 Here, we can see that contents of register a0 has been changed after performing operation.
 
 </details>
+
+  <details>
+       <Summary>Lab4: To Identify RISC-V Instruction type and find 32 bit pattern </Summary>
+       
+
    
 # Task 4: To Identify RISC-V Instruction type and find 32 bit pattern
 
@@ -376,7 +381,7 @@ There are total 6 types of instructions in RISC-V:
 
 
 
-## Task 2
+## Task 4 - Part 2
 * In Terminal install iverilog and GTKWave.
 * To simulate and run the verilog code, use following command in the terminal
 
@@ -451,3 +456,5 @@ The Output:
   ADDI R12, R4, 5
   ```
   ![Output7_ADDI](https://github.com/RohitP0311/asic-design-class/blob/main/Task4/Output7_ADDI.png)
+
+</details>
